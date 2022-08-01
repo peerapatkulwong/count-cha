@@ -11,9 +11,10 @@ button.addEventListener('click',function(event){
         }
         empty[num]++;
     }
-    document.write(empty[num] + "<br />");
+    document.querySelector('.out').innerHTML = empty[num];
 });
 
 clear.addEventListener('click',function(event){
     document.getElementById('put').value = '';
+    document.querySelector('.out').innerHTML = '';
 });
